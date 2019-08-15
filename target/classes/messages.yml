@@ -1,0 +1,15 @@
+permission-debug:
+  - '&5&lSDGui&d: &fPermission Debug'
+  - '&cError! &7You do not have permission to use that.'
+  - '&6Permission required: &e{node}&7.'
+
+command-debug:
+  - '&5&lSDGui&d: &fCommand Debug'
+  - '&cError! &7There was a problem with the command you entered, please read the reason.'
+  - '&6Reason: &e{reason}&7.'
+
+help:
+  - '&5&lSDGui&d: &7plugin commands &f/kit&7, &f/warp&7, &f/sd-gui'
+
+reload:
+  - '&5&lSDGui&d: &7All configuration files have been successfully reloaded.'

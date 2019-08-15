@@ -1,0 +1,24 @@
+name: SDGui
+version: 1.0-SNAPSHOT
+main: dev.nuer.sd.trial.SDGui
+api-version: 1.13
+prefix: SD-Gui
+authors: [Nuer]
+depend:
+  - Essentials
+commands:
+  kit:
+    usage: /<command>
+    description: Opens the Kit gui, use /kit <name> to claim a specific kit.
+    aliases:
+      - kits
+  warp:
+    usage: /<command>
+    description: Opens the Warp gui, use /warp <name> to use a warp directly.
+    aliases:
+      - warps
+  sd-gui:
+    usage: /<command>
+    description: Configuration command for SDGui, developed by Nuer.
+    aliases:
+      - sdgui

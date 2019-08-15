@@ -1,0 +1,269 @@
+status:
+  unlocked: '&a&lAVAILABLE'
+  locked: '&c&lUNAVAILABLE'
+
+kits:
+  donor:
+    - spartan
+  class:
+    - mercure
+  special:
+    - pvp
+
+name: '&7&lKITS'
+size: 27
+
+1:
+  slot: 4
+  head-item:
+    enabled: true
+  name: '&f&l-{player}-'
+  lore:
+    - '&7 '
+    - '&7&o((Owned Kits))'
+    - '&7 '
+    - '&c&lDonor: &f{donor}&7/&f5'
+    - '&a&lClass: &f{class}&7/&f1'
+    - '&b&lSpecial: &f{special}&7/&f9'
+  enchantments:
+  item-flags:
+#
+2:
+  slot: 11
+  material: 'book'
+  data-value: 0
+  open-gui:
+    enabled: true
+    gui: 'donor'
+  name: '&eDonor Kits'
+  lore:
+    - '&7 '
+    - '&7&o((left-click to open donor kits.))'
+    - '&7 '
+  enchantments:
+    - 'lure:1'
+  item-flags:
+    - 'hide_enchants'
+#
+3:
+  slot: 13
+  material: 'book'
+  data-value: 0
+  open-gui:
+    enabled: true
+    gui: 'class'
+  name: '&eClass Kits'
+  lore:
+    - '&7 '
+    - '&7&o((left-click to open class kits.))'
+    - '&7 '
+  enchantments:
+    - 'lure:1'
+  item-flags:
+    - 'hide_enchants'
+#
+4:
+  slot: 15
+  material: 'book'
+  data-value: 0
+  open-gui:
+    enabled: true
+    gui: 'special'
+  name: '&eSpecial Kits'
+  lore:
+    - '&7 '
+    - '&7&o((left-click to open special kits.))'
+    - '&7 '
+  enchantments:
+    - 'lure:1'
+  item-flags:
+    - 'hide_enchants'
+#
+5:
+  slot: 0
+  material: 'stained_glass_pane'
+  data-value: 15
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+6:
+  slot: 1
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+7:
+  slot: 2
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+8:
+  slot: 3
+  material: 'stained_glass_pane'
+  data-value: 3
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+9:
+  slot: 5
+  material: 'stained_glass_pane'
+  data-value: 3
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+10:
+  slot: 6
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+11:
+  slot: 7
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+12:
+  slot: 8
+  material: 'stained_glass_pane'
+  data-value: 15
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+13:
+  slot: 9
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+14:
+  slot: 10
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+15:
+  slot: 16
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+16:
+  slot: 17
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+17:
+  slot: 18
+  material: 'stained_glass_pane'
+  data-value: 15
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+18:
+  slot: 19
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+19:
+  slot: 20
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+20:
+  slot: 21
+  material: 'stained_glass_pane'
+  data-value: 3
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+21:
+  slot: 22
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+22:
+  slot: 23
+  material: 'stained_glass_pane'
+  data-value: 3
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+23:
+  slot: 24
+  material: 'stained_glass_pane'
+  data-value: 11
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+24:
+  slot: 25
+  material: 'stained_glass_pane'
+  data-value: 2
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+#
+25:
+  slot: 26
+  material: 'stained_glass_pane'
+  data-value: 15
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:

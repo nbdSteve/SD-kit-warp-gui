@@ -1,0 +1,22 @@
+status:
+  unlocked: '&a&lAVAILABLE'
+  locked: '&c&lUNAVAILABLE'
+
+name: '&7&lWARPS'
+size: 9
+
+1:
+  slot: 0
+  material: 'double_plant'
+  data-value: 0
+  warp-item:
+    enabled: true
+    warp-name: Default
+  name: '&7&lWARP: &e{warp-name}'
+  lore:
+    - '&7 '
+    - '&7&o((left click to warp.))'
+    - '&7 '
+    - '{status}'
+  enchantments:
+  item-flags:

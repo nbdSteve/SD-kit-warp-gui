@@ -1,0 +1,35 @@
+status:
+  unlocked: '&a&lAVAILABLE'
+  locked: '&c&lUNAVAILABLE'
+
+name: '&7&lDONOR KITS'
+size: 18
+
+1:
+  slot: 0
+  material: 'diamond_sword'
+  data-value: 0
+  kit-item:
+    enabled: true
+    kit-name: Spartan
+  name: '&7&lKIT: &e{kit-name}'
+  lore:
+    - '&7 '
+    - '&7&o((left click to claim kit.))'
+    - '&7 '
+    - '{status}'
+  enchantments:
+  item-flags:
+2:
+  slot: 13
+  material: 'barrier'
+  data-value: 0
+  back-button:
+    enabled: true
+  name: '&c&lBack'
+  lore:
+    - '&7 '
+    - '&7&o((left click to return to the previous Gui.))'
+    - '&7 '
+  enchantments:
+  item-flags:

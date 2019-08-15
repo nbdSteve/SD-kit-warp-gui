@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SDGui">
+    <output-path>$USER_HOME$/Desktop/minecraft/server stuff/Server Files/plugins</output-path>
+    <root id="archive" name="SDGui.jar">
+      <element id="module-output" name="trial" />
+    </root>
+  </artifact>
+</component>
