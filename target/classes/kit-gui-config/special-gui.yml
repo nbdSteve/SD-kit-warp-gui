@@ -3,12 +3,11 @@ size: 18
 kit-starting-slot: 0
 
 1:
-  slot: 0
   material: 'blaze_rod'
   data-value: 0
   kit-item:
     enabled: true
-    kit-name: PvP
+    kit-name: 'dtools'
   name: '&7&lKIT: &e{kit-name}'
   lore:
     - '&7 '
@@ -17,6 +16,19 @@ kit-starting-slot: 0
   enchantments:
   item-flags:
 2:
+  material: 'blaze_powder'
+  data-value: 0
+  kit-item:
+    enabled: true
+    kit-name: 'tools'
+  name: '&7&lKIT: &e{kit-name}'
+  lore:
+    - '&7 '
+    - '&7&o((left click to claim kit.))'
+    - '&7 '
+  enchantments:
+  item-flags:
+3:
   slot: 13
   material: 'barrier'
   data-value: 0

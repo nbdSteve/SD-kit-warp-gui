@@ -7,7 +7,7 @@ kit-starting-slot: 0
   data-value: 0
   kit-item:
     enabled: true
-    kit-name: Spartan
+    kit-name: 'Spartan'
   name: '&7&lKIT: &e{kit-name}'
   lore:
     - '&7 '

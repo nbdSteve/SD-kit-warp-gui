@@ -1,14 +1,11 @@
-status:
-  unlocked: '&a&lAVAILABLE'
-  locked: '&c&lUNAVAILABLE'
-
 kits:
   donor:
     - spartan
   class:
     - mercure
   special:
-    - pvp
+    - dtools
+    - tools
 
 name: '&7&lKITS'
 size: 27
