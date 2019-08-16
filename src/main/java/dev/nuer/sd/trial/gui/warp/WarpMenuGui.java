@@ -21,13 +21,21 @@ public class WarpMenuGui extends AbstractGui {
         super(FileManager.get("warp_gui").getInt("size"), ColorUtil.colorize(FileManager.get("warp_gui").getString("name")));
         this.player = player;
         this.config = FileManager.get("warp_gui");
+        int warpStartingSlot = config.getInt("warp-starting-slot");
         for (int i = 0; i < config.getInt("size"); i++) {
             try {
                 int fileID = i;
                 if (config.getBoolean(fileID + ".warp-item.enabled") &&
                         !player.hasPermission("essentials.warps." + config.getString(fileID + ".warp-item.warp-name"))) {
                 } else {
-                    setItemInSlot(config.getInt(fileID + ".slot"), buildItem(fileID), player1 -> {
+                    int slot;
+                    if (config.getBoolean(fileID + ".warp-item.enabled")) {
+                        slot = warpStartingSlot;
+                        warpStartingSlot++;
+                    } else {
+                        slot = config.getInt(fileID + ".slot");
+                    }
+                    setItemInSlot(slot, buildItem(fileID), player1 -> {
                         if (config.getBoolean(fileID + ".warp-item.enabled")) {
                             if (player.hasPermission("essentials.warps." + config.getString(fileID + ".warp-item.warp-name"))) {
                                 player.closeInventory();
@@ -51,7 +59,6 @@ public class WarpMenuGui extends AbstractGui {
                 config.getString(fileID + ".data-value"));
         ibu.addLore(config.getStringList(fileID + ".lore"));
         if (config.getBoolean(fileID + ".warp-item.enabled")) {
-            ibu.replaceLorePlaceholder("{status}", getStatus(config.getString(fileID + ".warp-item.warp-name")));
             ibu.addName(ColorUtil.colorize(config.getString(fileID + ".name")), "{warp-name}", config.getString(fileID + ".warp-item.warp-name"));
         } else {
             ibu.addName(ColorUtil.colorize(config.getString(fileID + ".name")), "debug", "debug");
@@ -59,10 +66,5 @@ public class WarpMenuGui extends AbstractGui {
         ibu.addEnchantments(config.getStringList(fileID + ".enchantments"));
         ibu.addItemFlags(config.getStringList(fileID + ".item-flags"));
         return ibu.getItem();
-    }
-
-    public String getStatus(String warpName) {
-        if (player.hasPermission("essentials.warps." + warpName)) return config.getString("status.unlocked");
-        return config.getString("status.locked");
     }
 }

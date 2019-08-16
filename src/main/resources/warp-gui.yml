@@ -1,12 +1,8 @@
-status:
-  unlocked: '&a&lAVAILABLE'
-  locked: '&c&lUNAVAILABLE'
-
 name: '&7&lWARPS'
 size: 9
+warp-starting-slot: 0
 
 1:
-  slot: 0
   material: 'double_plant'
   data-value: 0
   warp-item:
@@ -17,6 +13,19 @@ size: 9
     - '&7 '
     - '&7&o((left click to warp.))'
     - '&7 '
-    - '{status}'
+  enchantments:
+  item-flags:
+#
+2:
+  material: 'double_plant'
+  data-value: 0
+  warp-item:
+    enabled: true
+    warp-name: Test
+  name: '&7&lWARP: &e{warp-name}'
+  lore:
+    - '&7 '
+    - '&7&o((left click to warp.))'
+    - '&7 '
   enchantments:
   item-flags:

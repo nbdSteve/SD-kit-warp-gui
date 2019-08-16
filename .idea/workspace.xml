@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SDGui" />
+      <artifact name="sd-gui" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df4d09e9-bf58-4003-91f9-7856e6a87f6e" name="Default Changelist" comment="" />
+    <list default="true" id="df4d09e9-bf58-4003-91f9-7856e6a87f6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sd_gui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sd/trial/gui/kit/KitSubPageGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sd/trial/gui/kit/KitSubPageGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/sd/trial/gui/warp/WarpMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/sd/trial/gui/warp/WarpMenuGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kit-gui-config/class-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kit-gui-config/class-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kit-gui-config/donor-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kit-gui-config/donor-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kit-gui-config/special-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kit-gui-config/special-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kit-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kit-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/warp-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/warp-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/trial.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sd/trial/gui/kit/KitSubPageGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sd/trial/gui/kit/KitSubPageGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/sd/trial/gui/warp/WarpMenuGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/sd/trial/gui/warp/WarpMenuGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kit-gui-config/class-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kit-gui-config/class-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kit-gui-config/donor-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kit-gui-config/donor-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kit-gui-config/special-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kit-gui-config/special-gui.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/warp-gui.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/warp-gui.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +52,7 @@
   <component name="ProjectId" id="1PS2d0r1BzKOuxq12thqIfkMT73" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dev/nuer/sp/trial" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../test-server/plugins" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -104,5 +121,16 @@
       <updated>1565853260358</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

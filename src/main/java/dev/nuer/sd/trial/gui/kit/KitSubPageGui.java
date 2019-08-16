@@ -21,6 +21,7 @@ public class KitSubPageGui extends AbstractGui {
         super(FileManager.get("kit_gui_" + type).getInt("size"), ColorUtil.colorize(FileManager.get("kit_gui_" + type).getString("name")));
         this.player = player;
         this.config = FileManager.get("kit_gui_" + type);
+        int kitStartingSlot = config.getInt("kit-starting-slot");
         for (int i = 0; i < config.getInt("size"); i++) {
             try {
                 int fileID = i;
@@ -28,7 +29,14 @@ public class KitSubPageGui extends AbstractGui {
                         && !player.hasPermission("essentials.kits." + config.getString(fileID + ".kit-item.kit-name"))) {
 
                 } else {
-                    setItemInSlot(config.getInt(fileID + ".slot"), buildItem(fileID), player1 -> {
+                    int slot;
+                    if (config.getBoolean(fileID + ".kit-item.enabled")) {
+                        slot = kitStartingSlot;
+                        kitStartingSlot++;
+                    } else {
+                        slot = config.getInt(fileID + ".slot");
+                    }
+                    setItemInSlot(slot, buildItem(fileID), player1 -> {
                         if (config.getBoolean(fileID + ".kit-item.enabled")) {
                             if (player.hasPermission("essentials.kits." + config.getString(fileID + ".kit-item.kit-name"))) {
                                 player.closeInventory();
@@ -44,9 +52,6 @@ public class KitSubPageGui extends AbstractGui {
                     });
                 }
             } catch (Exception e) {
-                if (i == 2) {
-                    e.printStackTrace();
-                }
                 //Do nothing, item doesn't exist
             }
         }
@@ -57,7 +62,6 @@ public class KitSubPageGui extends AbstractGui {
                 config.getString(fileID + ".data-value"));
         ibu.addLore(config.getStringList(fileID + ".lore"));
         if (config.getBoolean(fileID + ".kit-item.enabled")) {
-            ibu.replaceLorePlaceholder("{status}", getStatus(config.getString(fileID + ".kit-item.kit-name")));
             ibu.addName(ColorUtil.colorize(config.getString(fileID + ".name")), "{kit-name}", config.getString(fileID + ".kit-item.kit-name"));
         } else {
             ibu.addName(ColorUtil.colorize(config.getString(fileID + ".name")), "debug", "debug");
@@ -65,10 +69,5 @@ public class KitSubPageGui extends AbstractGui {
         ibu.addEnchantments(config.getStringList(fileID + ".enchantments"));
         ibu.addItemFlags(config.getStringList(fileID + ".item-flags"));
         return ibu.getItem();
-    }
-
-    public String getStatus(String kitName) {
-        if (player.hasPermission("essentials.kits." + kitName)) return config.getString("status.unlocked");
-        return config.getString("status.locked");
     }
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sd-gui">
+    <output-path>$PROJECT_DIR$/../../../test-server/plugins</output-path>
+    <root id="archive" name="sd-gui.jar">
+      <element id="module-output" name="trial" />
+    </root>
+  </artifact>
+</component>
